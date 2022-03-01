@@ -1,0 +1,22 @@
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin: 20px;
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+a:visited{
+    color: chocolate;
+}
+
+a:hover{
+    background-color: chocolate;
+    color: white;
+}
+
+a:active {
+    background-color: rgb(138, 71, 23) ;
+}

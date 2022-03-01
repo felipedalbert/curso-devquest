@@ -1,0 +1,16 @@
+
+/* p{
+    margin: 30px 25px 35px 15px;
+} */
+
+/*shortcode - sentido horário: cima, direita, baixo, esquerda*/
+/*padding- espaçamento dentro do próprio elemento.*/
+ 
+p{
+    width: 300px;
+    margin: 30px 15px;
+    padding: 20px;
+    background-color: rgb(76, 127, 223);
+    border: solid 10px blueviolet;
+    border-radius: 30px;
+}

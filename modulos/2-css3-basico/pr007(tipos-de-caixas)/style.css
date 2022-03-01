@@ -1,0 +1,9 @@
+span{
+    color: rgb(247, 99, 0);
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    display: block
+}
+
+/* Utilize "display" para estilizar o tipo de caixa */

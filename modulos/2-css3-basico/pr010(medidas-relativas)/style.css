@@ -1,0 +1,24 @@
+
+html{
+    background-color: rgb(78, 78, 78);
+    font-size: 32px;
+}
+
+body{
+    background-color: blueviolet;
+    width: 50%;
+    font-size: 3rem;
+}
+
+.hierarquia-1{
+    background-color: #ea80fc;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.hierarquia-2{
+    background-color: #1de9b6;
+    width: 50%;
+    font-size: 0.5rem;
+}
+

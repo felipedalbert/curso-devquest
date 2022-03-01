@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formulario">
+
+        <form action="projeto-cadastro.html" method="get" enctype="multipart/form-data">
+            
+            <h1>Cadastre-se</h1>
+            
+            <span>É rapido e fácil</span>
+
+            <hr>
+        
+            <div class="nome-completo">
+                <input type="text" name="nome" id="nome" placeholder="Nome" class="form-elementos">
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" class="form-elementos" >
+            </div>
+
+            <input type="text" name="celular-email" id="celular-email" placeholder="Celular ou Email" class="form-elementos" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}$">
+            <input type="password" name="senha" id="senha" placeholder="Nova Senha" class="form-elementos">
+
+                <div class="data-nascimento">
+                    <label class="titulacao">Data de nascimento</label><br>
+                    <select name="dia" id="dia" class="form-elementos">
+                        <option>Dia</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+
+                    <select name="mes" id="mes" class="form-elementos">
+                        <option>Mês</option>
+                        <option value="Jan">Jan
+                        </option>
+                        <option value="Fev">Fev  
+                        </option>
+                        <option value="Mar">Mar</option>
+                        <option value="Abr">Abr</option>
+                        <option value="Mai">Mai</option>
+                    </select>
+        
+                    <select name="ano" id="ano" class="form-elementos">
+                        <option>Ano</option>
+                        <option value="2000">2000
+                        </option>
+                        <option value="2001">2001   
+                        </option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                    </select>
+                </div>
+                
+                <div class="area-genero">
+                    <label class="titulacao">Gênero</label> <br>
+                    <div class="genero feminino form-elementos">
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" name="genero" id="feminino" value="feminino">
+                    </div>
+
+                    <class class="genero masculino form-elementos">
+                        <label for="masculino">Maculino</label>
+                        <input type="radio" name="genero" id="masculino" value="masculino">
+                    </class>
+                    
+                    <div class="genero personalizado form-elementos">
+                        <label for="personalizado">Personalizado</label>
+                        <input type="radio" name="genero" id="personalizado" value="personalizado">
+                    </div>
+                </div>
+            <div class="termos">
+                
+                <p>Ao clicar em Cadastre-se, você concorda com nossos <a href="#">Termos </a>, <a href="#">Política de Dados</a> e <a href="#">Política de Cookies</a>. Você poderá receber notificações por SMS e cancelar isso quando quiser.</p>
+            </div>
+            
+            <div class="enviar-dados">
+                <input class="botao-cadastro" type="submit" value="Cadastre-se">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

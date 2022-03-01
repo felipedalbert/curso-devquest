@@ -1,0 +1,17 @@
+#descricao-xbox, #descricao-pc{
+    background-color: orange;
+}
+
+.descricao-produto{
+    width: 120px;
+    background-color: limegreen;
+    color: aliceblue;
+    padding: 10px;
+    border: solid rgb(61, 61, 141) 5px;
+    border-radius: 10px;
+}
+
+.descricao-produto.promocao{
+    background-color: rgb(230, 64, 35);
+    border-color: rgb(104, 6, 107);
+}

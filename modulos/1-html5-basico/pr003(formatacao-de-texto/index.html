@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto não-semantico</title>
+</head>
+<body>
+    <h1>Formatação de texto</h1>
+    
+    <p>Esse texto vai aparecer em <b>negrito</b> com a tag &lt b &gt (não-semântico)</p> <!-- não significará nada para o navegador, apenas que há uma formatação naquele trecho.--> 
+
+    <p>Esse texto vai aparece em <strong>negrito</strong> com a tag &lt strong &gt (semântico)</p> <!-- strong significa algo forte e diz pro navegador que ali há algo de muita importância -->
+
+    <p>Esse texto aparecerá em <i>itálico</i> com a tag &lt i &gt (não-semântico)</p> <!-- apenas fará a formatação em itálico, sem significado para o navegador -->
+
+    <p>Esse texto aparecerá em <em>itálico</em> com a tag &lt em &gt (semântico)</p> <!-- a tag 'em' significa "emphasis", que traduzindo quer dizer "ênfase", ou seja, além de formatar o texto, dizemos pro navegador que ele possuí uma ênfase diferente do restante do texto -->
+
+    <p>O texto a seguir aparecerá <u>sublinhado</u> com a tag 
+    &lt u &gt (não-semântico)</p> <!-- apenas sublinhará o texto, não tendo significado semântico para o navegador -->
+
+    <p>O texto a seguir aparecerá <ins>sublinhado</ins> com a tag &lt u &gt (semântico)</p> <!-- a tag 'ins' significa "insert" ou para o português "inserido", ou seja, vai inserir um sublinhado, informando para o navegador que é um trecho no qual deve chamar atenção -->
+
+    <p>Esse texto será <s>taxado</s> com a tag &lt s &gt (não-semântico)</p> <!-- a tag 's' apenas taxará o trecho em sua formatação, não possuindo semântica -->
+
+    <p>Esse texto será <del>taxado</del> com a tag &lt del &gt (semântico)</p> <!-- a tag 'del' sigifica "delete" ou em português "delatar, taxar". Desse modo, sua semântica quer dizer que o texto deve desconsiderado. -->
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+Passos para versionamento de código
+
+1- git init (inicializa um repósitório vazio no git, criando um branch com nome "master")
+
+2- git branch -m main (muda o nome da ramificação ou branch para main [principal])
+
+3- git remote add origin 'link' (vai linkar o repositório do git com o github)
+
+4- git remote -v (verifica a a consistência da linkagem de repositórios)
+
+5- git status (ver o estado do arquivo)
+
+6- git add 'arquivo' ou git add . (troca o estado de um ou mais arquivos editados para staged, tornando-se pronto para ser comitado)
+
+7- git commit -m "descrição" (Commit é um processo simples que adiciona as alterações para o histórico do repositório.
+Desse modo, todos os arquivos serão comitados e alterados para o estado de unmodified novamente, zerando o ciclo de vida de um arquivo.
+
+8- git push -u origin main (O comando git push é usado para enviar o conteúdo do repositório local para um repositório remoto.)
+[ps: só é necessário utilizar o comando '-u origin main' no primeiro push.]
+
+9 -  git remote set-url origin 'link' (Este comando será responsável por mudar o link da origem do repositório remoto, caso tenha sido setado
+incorretamente em um periodo anterior)
