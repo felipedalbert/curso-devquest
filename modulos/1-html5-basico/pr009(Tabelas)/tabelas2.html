@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        h1, h2{
+            color: white;
+        }
+        body{
+            background-color: rgb(26, 26, 26);
+        }
+        table, th, td{
+            border: 1px solid rgb(255, 255, 255);
+            border-collapse: collapse ;
+        }
+        th{
+            background-color: rgb(75, 129, 230);
+        }
+        td{
+            background-color: rgb(107, 176, 223);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    
+    <h2>Tabela Padrão</h2>
+    
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Telefone</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>29</td>
+            <td>(46)99999-8888</td>
+        </tr>
+        <tr>
+            <td>Telma</td>
+            <td>45</td>
+            <td>(41)99999-8888</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>18</td>
+            <td>(11)99999-8888</td>
+        </tr>
+    </table>
+
+    <h2>Tabela com Conspan</h2>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th colspan="2">Telefone</th> <!-- Fundirá a célula em questão com sua vizinha direita.-->
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>29</td>
+            <td>(46)99999-8888</td>
+            <td>(46)88888-7777</td>
+        </tr>
+        <tr>
+            <td>Telma</td>
+            <td>45</td>
+            <td>(41)99999-8888</td>
+            <td>(41)88888-7777</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>18</td>
+            <td>(11)99999-8888</td>
+            <td>(11)88888-7777</td>
+        </tr>
+    </table>
+
+    <h2>Tabela com Rowspan</h2>
+
+    <table>
+        <tr>
+            <th>Sexo</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Telefone</th>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>João</td>
+            <td>29</td>
+            <td>(46)99999-8888</td>
+        </tr>
+        <tr>
+            <td rowspan="2">F</td> <!--Fundirá a célula em questão com sua vizinha a baixo.-->
+            <td>Telma</td>
+            <td>45</td>
+            <td>(41)99999-8888</td>
+        </tr>
+        <tr>
+            <td>Fernanda</td>
+            <td>18</td>
+            <td>(11)99999-8888</td>
+        </tr>
+    </table>
+</body>
+</html>
