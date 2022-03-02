@@ -6,6 +6,7 @@ a{
     border: solid 2px black;
     border-radius: 25px;
     text-decoration: none;
+    color: orange;
 }
 
 a:visited{
