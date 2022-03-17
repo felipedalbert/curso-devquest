@@ -11,14 +11,21 @@
     margin-bottom: 20px;
 }
 
+
+
 .elemento-estatico {
     position: static;
     background-color: crimson;
+    top: 50px;
+    left: 100px;
 }
 
+
+
 .elemento-relativo {
-    position: relative;
+    position:relative;
     left: 100px;
+    top: 20px;
     background-color: coral;
 }
 
@@ -28,13 +35,14 @@
     top: 0;
     right: 0;
 }
-
 .elemento-relativo-com-filho {
     position: relative;
     width: 350px;
     height: 350px;
     background-color: gray;
 }
+
+
 
 .elemento-absoluto-com-pai {
     position: absolute;

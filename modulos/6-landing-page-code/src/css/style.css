@@ -1,0 +1,224 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+/* ----- Cabeçalho ----- */
+
+.cabecalho{
+    padding: 30px 15px; 
+    position: relative;
+}
+
+.cabecalho .logo{
+    position: relative; 
+    background: url(../images/logo.jpg) center center;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    left: 5px;
+    
+}
+
+.cabecalho .logo h1{
+    font-size: 0;
+}
+
+.cabecalho nav{
+    display: inline-block;
+    position: absolute;
+    right: 2%;
+    margin-top: 38.12px;
+}
+
+.cabecalho ul li{
+    display: inline-block;
+    padding: 0px;
+}
+
+.cabecalho ul li{
+    padding: 15px 0px;
+}
+
+.cabecalho ul li a{
+    transition: .2s ease-in-out;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.cabecalho ul li a:hover{
+    background-color: #8e5b5a;
+    color: white;
+    border-radius: 80px;
+}
+
+.cabecalho ul li a:active{
+    background-color: #5e3b3b;
+}
+
+/* ----- Painél ----- */
+
+.painel{
+    background: url(../images/painel.jpg) center center;
+    height: 600px;
+}
+
+.painel h2{
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-inline: 10px;
+}
+
+.secao-com-texto{
+    padding: 153px;
+    text-align: center;
+    clear: both;
+}
+
+.secao-com-texto img{
+    width: 170px;
+    height: 170px;
+}
+
+.secao-com-texto h2{
+    font-size: 45px;
+    font-weight: 600;
+    margin-block: 35px;
+}
+
+.secao-com-texto p{
+    font-size: 18px;
+    max-width: 702px;
+    margin: 0 auto;
+}
+
+.secao-com-texto.onde-estamos p{
+    font-size: 28px;
+    max-width: 454px;
+    margin: 0 auto;
+}
+
+.secao-com-texto.onde-estamos p spam{
+    color: #b9ab92;
+}
+
+.ladrilho div{
+    float: left;
+}
+
+.ladrilho .grande{
+    background: url(../images/4.jpg) center center no-repeat;
+    height: 600px;
+    width: 50%;
+}
+
+.ladrilho .pequeno.grao{
+    background: url(../images/3.jpg) center center no-repeat;
+    height: 300px;
+    width: 25%;
+}
+
+.ladrilho .pequeno{
+    background: url(../images/2.jpg) center center no-repeat;
+    height: 300px;
+    width: 25%;
+}
+
+.ladrilho .medio{
+    background: url(../images/1.jpg) center center no-repeat;
+    height: 300px;
+    width: 50%;
+
+}
+
+/* ----- Contato ----- */
+
+.contato{
+    background: url(../images/fundo-contato.jpg)  center center no-repeat;
+    color: white;
+    height: 600px;
+    position: relative;
+}
+
+.contato h2{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contato address{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.contato .texto-contato{
+    position: absolute;
+    top: 32%;
+    left: 55%;
+}
+
+/* ----- Rodapé ----- */
+
+.rodape{
+    background: url(../images/fundo-rodape.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 35px 30px;
+}
+
+.rodape .logo-rodape{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.rodape ul{
+    float: right;
+    right: 2%;
+    margin-top: 38.12px;
+}
+
+.rodape ul li{
+    display: inline-block;
+    padding: 15px;
+}
+
+.rodape ul li a{
+    color: white;
+    font-size: 20px;
+}
+
+.rodape ul li a:hover{
+    font-weight: bold;
+}
+
+.rodape .copyright{
+    color: white;
+}
+
+.rodape .redes-sociais .facebook, 
+.rodape .redes-sociais .instagram{
+    width: 20px;
+    height: 20px;
+    margin-inline: 10px;
+}
+
+.rodape .redes-sociais{
+    float: right;
+    clear: left;
+}
+
+.rodape .conteudo-de-baixo{
+   margin-top: 40px;
+}

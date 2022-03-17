@@ -18,6 +18,11 @@
     clear: both;
 }
 
+p{
+    text-align: justify;
+}
+
+
 img{
     float: left;
     width: 100px;

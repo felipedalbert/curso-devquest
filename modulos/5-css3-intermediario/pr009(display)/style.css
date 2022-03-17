@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin-block: 0;
     padding: 0;
 }
 
@@ -12,19 +12,19 @@ ul{
 }
 
 .em-bloco li{
-    background-color: aqua;
+    background-color: rgb(197, 92, 238);
     margin-bottom: 10px;
     width: 100px;
 }
 
 .em-linha li{
     display: inline;
-    background-color: aqua;
+    background-color: rgb(197, 92, 238);
 }
 
 .em-linha-e-bloco li{
     display: inline-block;
-    background: aqua;
+    background: rgb(197, 92, 238);
     width: 100px;
     height: 100px;
 }

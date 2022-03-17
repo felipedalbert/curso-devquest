@@ -5,9 +5,7 @@
 
 
 ul{
-    /* list-style-image: url('images/icone.png'); */
-
-    background-color:  orange;
+    background-color:  rgb(179, 70, 252);
     list-style: url(images/icone3.png) square inside;
 }
 

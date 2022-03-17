@@ -1,12 +1,17 @@
 p {
-    color: coral;
-    font-size: 24px;
-    font-weight: bold;
+    color: rgb(4, 2, 5);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+}
+
+div{
+    margin-inline: 30px;
 }
 
 .bg{
-    background-color: lightgreen;
-    background-image: url(./images/cat.png);
+    background-color: rgb(105, 68, 238);
+    background-image: url(./images/tech.png);
 }
 
 .bg-image{
@@ -15,30 +20,35 @@ p {
 }
 
 .bg-repeat{
+    background-image: url(./images/tech.png);
     background-repeat: no-repeat;
     height: 540px;
 }
 
 .bg-size-cover{
+    background-image: url(./images/tech.png);
     background-size: cover;
-    height: 440px;
+    height: 513px;
 }
 
 .bg-fixed{
+    background-image: url(./images/tech.png);
+    background-size: cover;
     background-attachment: fixed;
-    height: 540px;
+    height: 513px;
 }
 
-/* .bg-position{
+.bg-position{
+    background-image: url(./images/tech.png);
     background-position: bottom right;
     background-repeat: no-repeat;
     height: 540px;
-} */
+}
 
 /* Short code */
 
-.bg-position{
+/* .bg-position{
     height: 540px;
-    background: rgb(78, 78, 78) url(./images/cat.png)
-    no-repeat left bottom;
-}
+    background: rgb(78, 78, 78) url(./images/tech.png)
+    no-repeat bottom right;
+} */

@@ -51,35 +51,43 @@ p{
 /* ----- LETTER SPACING ----- */
 
 .altura-entre-linhas {
-    line-height: 40px;
+    line-height: 1.5em;
 }
 
 /* ----- TEXT SHADOW ----- */
 
 .sombra-de-texto {
-    text-shadow: 2px 2px 3px #4d42e0;
+    text-shadow: 2px 2px 2px #01ff9e;
+}
+
+.italico{
+    font-style: italic;
+}
+
+.negrito{
+    font-weight: bold;
 }
 
 /* ----- GERAL ----- */
 
 .fundo-alinhamento {
     padding: 20px;
-    background-color: #D1C4E9;
+    background-color: #62ec38;
 }
 
 .fundo-transform {
     padding: 20px;
-    background-color: #C8E6C9;
+    background-color: #6e977a;
 }
 
 .fundo-decoration {
     padding: 20px;
-    background-color: #FFF9C4;
+    background-color: #426b42;
 }
 
 .fundo {
     padding: 20px;
-    background-color: #ccc;
+    background-color: #5eaf5c;
 }
 
 html{

@@ -1,10 +1,12 @@
 body{
     background-color: rgb(182, 182, 182);
+    min-width: 320px;
 }
 
 .cabecalho{
-    padding: 10px 5px;
-    background-color: aquamarine;
+    padding: 15px 5px;
+    background-color: rgb(199, 89, 61);
+    
 }
 
 .cabecalho .logo{
@@ -16,13 +18,23 @@ body{
 }
 .cabecalho nav li {
     display: inline-block;
-    padding: 15px;
+    padding: 10px;
+    background-color: coral;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.cabecalho nav li a{
+    color: rgb(255, 38, 0);
+    text-decoration: none;
 }
 
 main{
     background-color: white;
     padding: 30px;
-    min-width: 320px;
+    
     max-width: 900px;
     margin: 0 auto;
 }
@@ -39,7 +51,7 @@ main p{
     width: 100%;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 500px) {
     .cabecalho {
         text-align: center;
     }
@@ -48,8 +60,23 @@ main p{
         float: none;
     }
 
-    .cabecalho li{
-        display: block;
-        text-align: center;
+    .cabecalho .logo{
+        margin-bottom: 5px;
     }
+}
+
+@media (max-width: 392px) {
+    .cabecalho{
+        padding-block: 1px;
+    }
+
+    .cabecalho nav li{
+        display: block;
+        background-color: coral;
+        margin-block: 5px;
+        width: auto;
+    }
+
+
+    
 }
