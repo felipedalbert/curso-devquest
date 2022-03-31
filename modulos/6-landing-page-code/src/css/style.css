@@ -7,6 +7,7 @@ body{
     max-width: 1440px;
     margin: 0 auto;
     font-size: 1.6rem;
+    background-color: white;
 }
 
 /* ----- Cabeçalho ----- */
@@ -81,6 +82,8 @@ body{
     padding-inline: 10px;
 }
 
+/* ----- Seção com texto ----- */
+
 .secao-com-texto{
     padding: 153px;
     text-align: center;
@@ -113,6 +116,8 @@ body{
 .secao-com-texto.onde-estamos p spam{
     color: #b9ab92;
 }
+
+/* ----- Ladrilho ----- */
 
 .ladrilho div{
     float: left;
@@ -161,6 +166,7 @@ body{
 .contato address{
     font-size: 25px;
     font-weight: 600;
+    font-style: normal;
 }
 
 .contato .texto-contato{
@@ -203,7 +209,7 @@ body{
     font-weight: bold;
 }
 
-.rodape .copyright{
+.rodape .copyright span{
     color: white;
 }
 
