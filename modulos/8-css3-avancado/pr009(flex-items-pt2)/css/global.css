@@ -11,3 +11,7 @@
     text-align: center;
     flex: 1;
 }
+
+.order{
+    display: flex;
+}

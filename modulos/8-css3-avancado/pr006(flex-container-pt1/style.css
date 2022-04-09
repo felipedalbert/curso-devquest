@@ -1,13 +1,13 @@
 .container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     flex-flow: row wrap;
 }
 
 .container .item{
     background-color: aqua;
-    color: white;
+    color: black;
     width: 100px;
     height: 100px;
     margin: 10px;

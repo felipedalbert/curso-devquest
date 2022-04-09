@@ -22,7 +22,7 @@
     align-items: baseline;
 }
 
-.flex .item{
+.baseline .item{
     flex: 1;
 }
 

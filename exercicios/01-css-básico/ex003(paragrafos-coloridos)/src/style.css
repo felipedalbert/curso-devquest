@@ -1,0 +1,13 @@
+.paragrafo{
+    padding: 20px;
+    margin-block: 40px;
+    border-radius: 10px;
+}
+
+.paragrafo.fundo-padrao{
+    background-color: #F5F5F5;
+}
+
+.paragrafo.fundo-colorido{
+    background-color: #F0CCE2;
+}

@@ -1,5 +1,5 @@
 .container{
-    height: 130px;
+    height: 400px;
     flex-wrap: wrap;
 }
 
@@ -7,7 +7,7 @@
 .flex-end .item,
 .center .item,
 .stretch .item{
-    flex: 3;
+    flex: 1 1 50px;
 }
 
 .flex-start{

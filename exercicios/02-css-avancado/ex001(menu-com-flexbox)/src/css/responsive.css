@@ -1,0 +1,32 @@
+@media(max-width:768px){
+    .cabecalho{
+        flex-direction: column;
+        height: 550px;
+    }
+    
+    .cabecalho .logo .titulo{
+        font-size: 35px;
+    }
+
+    .cabecalho .menu{
+        text-align: center;
+        height: 380px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .cabecalho .menu li{
+        margin-left: 0;
+    }
+
+    .cabecalho .menu li a{
+        font-size: 30px;
+        
+    }
+
+    .cabecalho .menu li:last-child a{
+        margin-top: 30px;
+        font-size: 22px;
+        padding: 15px;
+    }
+}

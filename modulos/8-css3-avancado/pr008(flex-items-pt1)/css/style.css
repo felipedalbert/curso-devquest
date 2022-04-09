@@ -46,9 +46,7 @@
     flex-shrink: 0;
 }
 
-.shrink .item{
-    width: 200px;
-}
+
 
 .wrap{
     flex-wrap: wrap;
