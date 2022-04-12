@@ -1,0 +1,55 @@
+.container{
+   background-color: #f7f7f7;
+   padding: 35px;
+   display: grid;
+   max-width: 900px;
+   grid-template-areas: 
+   "video-principal propaganda"
+   "video-principal videos-sugeridos";
+   grid-template: 56px, 1fr / 1fr, 270px;
+   gap: 2px 15px;
+}
+
+.video-principal{
+    grid-area: video-principal
+}
+
+.video-principal img{
+    width: 100%;  
+}
+
+.video-principal .descricao{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.video-principal .descricao .titulo{
+    font-size: 18px;
+}
+
+.propaganda{
+    grid-area: propaganda;
+}
+
+.videos-sugeridos{
+    grid-area: videos-sugeridos;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.videos-sugeridos .video-sugerido{
+    display: flex;
+    gap: 5px;
+}
+
+.videos-sugeridos .video-sugerido .titulo{
+    font-size: 14px;
+}
+
+.videos-sugeridos .video-sugerido .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

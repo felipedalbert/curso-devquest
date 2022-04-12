@@ -17,7 +17,7 @@ li::marker{
 }
 
 .antes::before{
-    content: " ";
+    content: "";
     background: url(logo.jpg) center center no-repeat;
     display: inline-block;
     width: 85px;

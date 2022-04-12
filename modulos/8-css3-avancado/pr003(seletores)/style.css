@@ -34,12 +34,12 @@ p, span{
     color: aqua;
 }
 
-/* div > p{
+div > p{
     color: royalblue;
-} */
+}
 
 div + p{
-    color: royalblue;
+    color: green;
 }
 
 a[target=_blank]{
