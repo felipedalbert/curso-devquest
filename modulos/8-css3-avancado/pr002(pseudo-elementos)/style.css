@@ -1,23 +1,40 @@
-.first-letter::first-letter{
-    color: cornflowerblue;
+body{
+    height: 900px;
 }
 
-.first-line::first-line{
-    color: coral;
+blockquote{
+    font-style: italic;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.first-line::first-letter{
-    color: blue;
+.primeira-letra{
+    text-align: justify;
 }
 
+.primeira-letra::first-letter{
+    font-size: 450%;
+    color: chartreuse;
+    float: left;
+    margin: 0 10px -10px 0;
+}
+
+.primeira-linha::first-line{
+    color: white;
+    background-color: darkgreen;
+}
 
 li::marker{
-    color: red;
+    color: forestgreen;
     font-size: 30px;
 }
 
 .antes::before{
-    content: "";
+    content:"";
     background: url(logo.jpg) center center no-repeat;
     display: inline-block;
     width: 85px;
@@ -26,4 +43,16 @@ li::marker{
 
 .depois::after{
     content: url(logo.jpg);
+}
+
+blockquote:hover::after{
+    content: "Autor abc - 2022";
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid green;
+    background-color: lightgreen;
+    border-radius: 10px;
+    margin-top: 15px;
+
+
 }

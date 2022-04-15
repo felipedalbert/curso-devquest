@@ -1,13 +1,24 @@
+body{
+    height: 1000px;
+}
+
 img{
     width: 200px;
 }
 
 img.scale{
-    transform: scaleX(1);
+    transform: scaleX(2);
 }
 
 img.rotate{
-    transform: rotate(-10deg);
+    transition: .3s ease-in-out;
+}
+
+img.rotate:hover{
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition: .3s ease-in-out;
+    width: 280px;
 }
 
 img.translate{

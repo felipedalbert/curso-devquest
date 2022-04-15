@@ -1,6 +1,7 @@
  :root{
      --cor-padrao: green;
      --tamanho-de-fonte-padrao: 20px;
+     --texto-caixa-alta: uppercase;
  }
 
  h2{
@@ -17,10 +18,12 @@
 p{
     color: var(--cor-padrao, red);
     font-size: var(--tamanho-de-fonte-padrao, 20px);
+    text-transform: var(--texto-caixa-alta);
 }
 
 
 span{
+    display: block;
     color: var(--cor-padrao, red);
     font-size: var(--tamanho-de-fonte-padrao, 20px);
 }
