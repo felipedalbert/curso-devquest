@@ -1,4 +1,4 @@
-body{
+*{
     margin: 0;
 }
 
@@ -6,13 +6,13 @@ body{
     display: grid;
     padding: 3em;
     grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
 }
 
 .container p{
     padding: 2em;
     border-radius: .4em;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 30px rgba(255, 111, 219, 0.8);
 }
 
 

@@ -1,26 +1,48 @@
+/* estilização global */
+
 body{
-    height: 1000px;
+    height: 1500px;
+    background-color: #191919;
+    color: white;
+
+}
+
+div{
+    margin-left: 10px;
+    
+    border: solid purple 3px;
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
 }
 
 img{
     width: 200px;
 }
 
+img.rotate{
+    margin: 75px auto;
+}
+
 img.scale{
-    transform: scaleX(2);
+    margin: 75px;
+}
+
+img.scale{
+    transform: scale(1);
 }
 
 img.rotate{
     transition: .3s ease-in-out;
+    border-radius: 50%;
 }
 
 img.rotate:hover{
     cursor: pointer;
     transform: rotate(-90deg);
     transition: .3s ease-in-out;
-    width: 280px;
 }
 
 img.translate{
-    transform: translate(50px,60px);
+    transform: translate(130px,130px);  
 }

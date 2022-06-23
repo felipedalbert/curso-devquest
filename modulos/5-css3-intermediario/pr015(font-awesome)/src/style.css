@@ -1,0 +1,21 @@
+.fa-facebook{
+    color: orange;
+}
+
+.fa-facebook:hover{
+    color: red;
+}
+
+.fa-times-circle{
+    transition: .3s ease-in-out;
+}
+
+.fa-times-circle:hover{
+    cursor: pointer;
+    transform: rotate(90deg) scale(1.1);
+    transition: .2s ease-in-out;
+    background-color: blueviolet;
+    border-radius: 18px;
+    padding: 0;
+}
+

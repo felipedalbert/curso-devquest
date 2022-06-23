@@ -6,6 +6,10 @@
     align-items: flex-start;
 }
 
+.flex-start:nth-child(3){
+    align-self: center;
+}
+
 .flex-end{
     align-items: flex-end;
 }

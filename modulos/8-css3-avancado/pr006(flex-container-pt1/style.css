@@ -8,7 +8,7 @@
 .container .item{
     background-color: aqua;
     color: black;
-    width: 100px;
+    flex: 0 1 200px;
     height: 100px;
     margin: 10px;
 }

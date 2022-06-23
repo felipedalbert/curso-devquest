@@ -1,51 +1,99 @@
-h1{
-    color: green;
+/* Estilização global */
+nav{
+    width: 200px;
+}
+
+section{
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    border: outset darkgray 1px;
+}
+
+div{
+    border-radius: 3px;
+    padding: 5px;
+    border: dashed 2px darkgray;
+    margin-bottom: 10px;
+}
+
+p{
+    margin: 5px;
+    border-radius: 5px;
+    padding: 2px;
+    border: solid .5px black;
+}
+
+
+a{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Seletores básicos */
+
+-h1{
+    background-color: yellow;
+    color: gray;
+    text-align: center;
 }
 
 .paragrafo{
-    color: blue;
+    color: darkgoldenrod;
 }
 
 #menu{
-    margin-left: 100px;
+    text-align: center;
+    background-color: grey;
+    color: yellow;
+    text-decoration: underline;
 }
 
 *{
-    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+[target=_blank]{
+    background-color: gray;
+    color: gold;
+}
+
+/* Combinadores */
+
+-p, span{
+    text-transform: uppercase;
+    color: darkgoldenrod;
 }
 
 .titulo{
     font-size: 30px;
 }
 
-.titulo.laranja{
+.titulo.cor1{
     color: orange;
 }
 
-.titulo.vermelho{
-    color: red;
+.titulo.cor2{
+    color: brown;
 }
 
-p, span{
-    font-size: 10px;
+.sobre p{
+    text-transform: uppercase;
+    color: darkgoldenrod;
+    font-weight: 700;
 }
 
-.sobre .texto{
-    color: aqua;
-}
-
-div > p{
-    color: royalblue;
+section > p{
+    color: yellow;
+    text-transform: uppercase;
 }
 
 div + p{
-    color: green;
+    color: goldenrod;
+    text-decoration: underline;
 }
 
-a[target=_blank]{
-    color: red;
-}
-
-a[target=_self]{
-    color: blueviolet;
+a ~ p{
+    color: darkgoldenrod;
+    text-decoration: underline;
 }

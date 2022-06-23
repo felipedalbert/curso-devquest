@@ -1,11 +1,16 @@
+body{
+    background-color: rgb(39, 39, 39);
+}
+
+
 .container {
     display: flex;
-    max-width: 400px;
-    border: 1px solid #ccc;
+    max-width: 700px;
+    border: 1px solid rgb(240, 255, 175);
 }
 
 .item {
-    background-color: rgb(195, 145, 241);
+    background-color: rgb(229, 231, 68);
     font-size: 20px;
     margin: 5px;
     text-align: center;    
