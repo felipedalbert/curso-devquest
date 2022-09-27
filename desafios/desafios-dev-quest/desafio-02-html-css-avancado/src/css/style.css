@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--text-font);
+    background: var(--primary-dark) url(../images/bg-desktop.svg) no-repeat center center;
+    background-size: cover;
+}
+
+.content-container{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 45px;
+    align-self: center;
+}
+
+.content-container header{
+    margin-bottom: 60px;
+}
+
+.content-container header a{
+    transition: .2s ease-in-out;
+}
+
+.content-container header a:hover{
+    opacity: .8;
+    transition: .2s ease-in-out;
+}
+
+.content-container main{
+    display: flex;
+    column-gap: 45px;
+    margin-bottom: 30px;
+}
+
+.content-container main .info-container{
+    padding-top: 45px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.content-container main .info-container h2{
+    font-family: var(--heading-font);
+    font-size: 40px;
+}
+
+.content-container main .info-container p{
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 582px;
+}
+
+.content-container main .info-container a{
+    background-color: #ffffff;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px 35px;
+    text-align: center;
+    border-radius: 25px;
+    color: var(--primary-dark);
+    transition: .2s ease-in-out;
+}
+
+.content-container main .info-container a:hover{
+    background-color: #966dff;
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+.content-container footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-container footer .social-media{
+    display: flex;
+    column-gap: 15px;
+    color: #ffffff;
+}
+
+
+.content-container footer .social-media li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: .2s ease-out;
+}
+
+.content-container footer .social-media li a:hover{
+    color: var(--primary-soft);
+    border: 1px solid var(--primary-soft);
+    transition: .2s ease-in;
+}
+

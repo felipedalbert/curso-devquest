@@ -4,7 +4,7 @@
 }
 
 .flex-1{
-    flex: 1;
+    flex-basis: 0;
 }
 
 .wrap{

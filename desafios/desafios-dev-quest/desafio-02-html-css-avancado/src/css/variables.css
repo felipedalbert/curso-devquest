@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+:root{
+    --primary-dark: hsl(257, 40%, 49%);
+    --primary-soft: hsl(300, 69%, 71%);
+    
+    --heading-font: 'Poppins', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+}
