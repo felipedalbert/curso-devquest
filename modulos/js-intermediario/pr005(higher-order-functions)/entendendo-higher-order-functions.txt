@@ -1,0 +1,2 @@
+funções de ordem superior -> permitem receber funções como parametro para outras funções (call back) 
+ou retornar outras funções.

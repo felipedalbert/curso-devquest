@@ -1,0 +1,26 @@
+variáveis do tipo var não são sensíveis ao escopo de blocos (if else, while, for, try catch), 
+respeitando apenas o escopo da sua função. Então se tentarmos ler uma variável var de dentro de
+uma função (escopo de função) fora dela, será retornado um erro de refeerência. Todavia, quando 
+lemos uma variável que está dentro de um if, else, while ou for (escopo de bloco), será retornado
+o valor daquela variável, já que o var não respeita os limites do escopo de bloco.
+
+a ideia de escopo de bloco surgiu no ECmaScript 6 com let e const, já que antes havia somente "function scope"
+
+Sendo assim, nos dias de hoje, utilizamos apenas let e const para evitar problemas e bugs no código
+de forma geral. variáveis let não podem ultrapssar escopo de bloco e escopos de função. Além disso, 
+não é posspivel utilizar os mesmos nomes de variável para var e let nome mesmo escopo, somente em escopos
+diferentes.
+
+Variáveis do tipo const seguem as mesmas regras de escopo de let, porém ela deve ser declarada e atribuida logo
+de início. Além disso, seu valor não poderá ser modificado ou reatribuido em outro momento.
+
+╔═════════════════════════╦════════════╦═════════════╦═════════════╗
+║                         ║    var     ║     let     ║    const    ║
+╠═════════════════════════╬════════════╬═════════════╬═════════════╣
+║ pode ser sobre-escrita  ║     |      ║      |      ║      x      ║
+╠═════════════════════════╬════════════╬═════════════╬═════════════╣
+║ escopo                  ║   função   ║    bloco    ║    bloco    ║
+╠═════════════════════════╬════════════╬═════════════╬═════════════╣
+║ referenciável antes da  ║            ║             ║             ║
+║ linha de declaração     ║     |      ║      x      ║      x      ║
+╚═════════════════════════╩════════════╩═════════════╩═════════════╝
