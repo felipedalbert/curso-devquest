@@ -1,0 +1,43 @@
+Hoisting se trata da elevação das declarações de todas as funções e variáveis 
+para o topo do seu escopo (atribuição da variável permanece na mesma linha que 
+foi escrita), sendo uma varredura realizada pelo JS antes de execução do código, 
+utilizada para identificar variáveis e funções e aloca-las na memória.
+
+►►► Hoisting com var:
+
+-> Ao realizar o hoisting, o JS atribui inicialmente a variável (var) içada como
+undefinied (var a = undefinied)
+
+►►► Hoisting com let e const:
+
+-> As variáveis com let e const também sofrem içamento (são armazenadas na memória), enxergando
+que aquela variável let existe, porém não podem ser acessadas antes de sua inicialização(atribuição) e atribuidas 
+como undefinied. Logo, seu acesso só é permitido após receberem uma atribuição; caso contrário, teremos um erro. 
+
+E é por isso que precisamos defini-las sempre no início de cada escopo manualmente (para que essas variáveis 
+estejam disponíveis para o bloco inteiro), ja que se forem utilizadas (lidas) antes de 
+sua declaração/atribuição se tornarão inválidas por erro de referência.
+
+--Temporal Dead Zone : Entre a declaração da variável com let e sua atribuição há o Temporal Dead Zone (TDZ). 
+Qualquer acesso feito à variável nesse espaço de tempo resultará em ReferenceError. Contudo, é um erro benéfico, 
+pois acessar uma variável antes de sua atribuição é raramente intencional em uma aplicação.
+
+Como regra geral, use let somente para contadores de loop ou se você realmente
+precisará alterar o valor da variável depois. Pra qualquer outro caso, vá de 
+const. 
+
+/\/\-> Não tente extrair benefícios do hoisting no caso de variáveis. O hoisting foi criado somente
+para evitar erros e bugs. Resumindo, nunca utilize variáveis antes de declara-lás.
+
+►►► Hoisting com função:
+-> Todas as funções serão elevadas inicialmente (antes de variáveis var), mantendo
+seus valores e codificações internas. então se lermos a função com um console.log
+antes de declara-la, o código funcionará perfeitamente
+
+/\/\-> Nesse caso, extraia o máximo de benefícios do hoisting em funções, ja que elas podem
+utilizadas antes mesmo de serem construídas.
+
+►►► Hoisting com função atribuida a um var:
+-> Se atribuirmos uma função a um variável var e tentarmos lê-la antes de sua atribuiçãp, 
+o hoisting definirá a variável será definida como undefinied, impedindo a utilização da
+função através da variável.
