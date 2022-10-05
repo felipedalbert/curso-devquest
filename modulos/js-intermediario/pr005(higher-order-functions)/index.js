@@ -25,6 +25,7 @@ const multiplicar = multiplicador => numero => numero * multiplicador
 
 
 let dobrar = multiplicar(2)
+console.log(dobrar)
 let triplicar = multiplicar(3)
 let quadruplicar = multiplicar(4)
 

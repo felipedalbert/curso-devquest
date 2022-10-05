@@ -1,10 +1,10 @@
 let frutas = ['banana', 'maça', 'laranja', 'pêra']
 
-// for(let i = 0; i < frutas.length; i++){
-//     console.log(`Fruta: ${frutas[i]}`);
-// }
+for(let i = 0; i < frutas.length; i++){
+    console.log(`Fruta: ${frutas[i]}`);
+}
 
-frutas.forEach(item =>{ //(item, indice, array) - iteração com arrays
+frutas.forEach(item =>{ //(item, indice, array) - iteração com arrays - para cada
     console.log(`Fruta: ${item}`)
 })
 
