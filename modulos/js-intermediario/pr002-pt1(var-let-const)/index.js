@@ -21,10 +21,10 @@ console.log(tempo) // printará o valor de tempo no console
 //     let temperatura = '16'
 // }
 
-// console.log(temperatura) // retornará erro, já que o let não vaza seu valor no escopo de blovo
+// console.log(temperatura) // retornará erro, já que o let não vaza seu valor no escopo de bloco
 
-for (let i = 0; i < 10; i++) {
-    console.log(i) //para lações de repetição utilize sempre let.
+for (var i = 0; i < 10; i++) {
+    console.log(i) //para laços de repetição utilize sempre let.
 }
 
 const limitePessoas = 200;

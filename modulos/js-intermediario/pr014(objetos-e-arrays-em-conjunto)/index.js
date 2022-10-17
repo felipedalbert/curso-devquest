@@ -40,6 +40,8 @@ const videoGame2 = {
 
 videoGame2.jogos.push(jogo4)
 
+console.log(videoGame2.jogos[3])
+
 console.log(videoGame2.jogos[2].nome)
 
 
@@ -55,10 +57,14 @@ let cliente = {
         jogos:[
             {nome: 'Fall Guys',
             preco: 0,
-            exclusivo: false}
+            exclusivo: false},
+            {nome: 'Fortnite',
+            preco: 0,
+            exclusivo: false
+            } 
         ]
     } //objeto dentro de objeto
 }
 
-console.log(cliente.ultimoPedido.jogos[0].nome)
+console.log(cliente.ultimoPedido.jogos[1].nome)
 
