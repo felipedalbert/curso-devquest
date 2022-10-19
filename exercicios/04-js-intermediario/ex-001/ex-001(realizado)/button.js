@@ -1,20 +1,16 @@
-botaoTrocaCor = document.getElementById('btnTrocaCor')
-quadradoMutante = document.getElementById('quadrado1')
+let botaoTrocaCor = document.getElementById('btnTrocaCor')
+let quadradoMutante = document.getElementById('quadrado1')
 
 
 
 botaoTrocaCor.addEventListener('click', () =>{
 
-    const estilo = getComputedStyle(quadradoMutante)
+    const estiloDoQuadradoMutante = getComputedStyle(quadradoMutante)
 
-    console.log(estilo.backgroundColor)
-
-    if(quadradoMutante.style.backgroundColor === 'blue'){
-       quadradoMutante.style.backgroundColor = 'yellow' 
-    }else {
-        console.log(quadradoMutante.style)
+    if(estiloDoQuadradoMutante.backgroundColor === 'rgb(0, 0, 255)'){
+        quadradoMutante.style.backgroundColor = 'yellow';
+    }else{
+        quadradoMutante.style.backgroundColor = 'blue';
     }
-
-    
-
 })
+

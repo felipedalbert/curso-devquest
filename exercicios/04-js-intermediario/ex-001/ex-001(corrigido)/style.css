@@ -20,11 +20,15 @@ main .container .quadrado{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-main .container #quadrado1{
+main .container .quadrado.azul{
     background-color: blue;
 }
 
-main .container #quadrado2{
+main .container .quadrado.amarelo{
+    background-color: yellow;
+}
+
+main .container .quadrado.vermelho{
     background-color: red;
 }
 
