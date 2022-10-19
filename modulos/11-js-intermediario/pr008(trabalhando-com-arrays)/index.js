@@ -24,6 +24,4 @@ frutas.shift() //retira o primeiro item do array
 
 console.log(frutas)
 
-
-
 console.log(frutas.indexOf('laranja')) //indica o índice de um item no array

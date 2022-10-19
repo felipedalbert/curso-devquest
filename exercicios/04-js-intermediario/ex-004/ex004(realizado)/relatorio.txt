@@ -1,0 +1,33 @@
+Ao realizar:
+
+function validar(){
+    if(inputTextoQualquer.value !== '') {
+        console.log('teste')
+    }  
+}
+
+é printado 'teste' no console mesmo não inserindo nada no input
+
+Isso acontece porque inputTextQualquer.value sempre vai retornar undefinied, já que não é possível apanhar um único valor de uma array como um todo, logo a validação retorna true
+
+Por isso, temos que escolher um índice do array para acessar o value:
+
+if(inputTextoQualquer[0].value !== '') {
+    console.log('teste')
+}
+
+A partir de agora, o 'teste' só será printado se realmente o valor do input desejado for diferente de ''
+
+Lembre-se: foi utilizado a const corpo para escutar um evento porque na altura, não sabiamos qual evento chamar para a ocasião. Portanto, para fins de testes, adicionamos um eventListenner no corpo pq não é possível escutar eventos de nodeLists ou HTMLcollection.
+
+Porém, o objetivo era que a validação atingisse todos os inputs. Poderiamos até fazer repetidos if's, mas isso seria redundancia de código.
+
+
+----------------------------------------------------------------
+
+
+Para que não haja redundancia, precisamos iterar o NodeList em um forEach (isso não é possível com HTMLcollection). Sendo assim, como parametro para o forEach, utilizamos uma arrow function com parametro único. Esse parametro 'input' terá o valor de cada do nodeLists a cada vez que passar pelo forEach.
+
+Dentro da arrow function, adicionamos um eventListenner com evento de change, para que a cada vez que o valor de dentro do input mudar, o escutor entre no seu escopo e realize a validação.
+
+Na validação, o if verifica se o o valor desse input é diferente de '' (vazio). Se for, adicionará uma classe 'campo-preenchido' que pinta a borda do input de verde. Também removerá a classe 'campo-vazio' que é responsável por pintar a borda de vermelhor caso o valor do input seja igual a '' (vazio). Por fim, o else faz o processo contrário.

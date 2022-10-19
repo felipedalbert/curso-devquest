@@ -1,0 +1,5 @@
+.campo-preenchido{
+    border: green 1px solid;
+
+    outline: green 1px solid;
+}
