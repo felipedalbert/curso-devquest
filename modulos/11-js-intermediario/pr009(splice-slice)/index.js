@@ -11,16 +11,27 @@ console.log(frutasExatriadasApartirDe)
 
 
 
-let frutasEmendadas = frutas.splice(1, 3) // (indice, contador de exclusão)
 
-console.log(frutasEmendadas)
+
+// let frutasEmendadas = frutas.splice(1, 3) // (indice, contador de exclusão)
+
+// console.log(frutasEmendadas)
+
+// console.log(frutas)
 //o splice remove de fato os elementos do array original
 
 
-// let removeEAdicionaFrutas = frutas.splice(1, 2,'Goiaba', 'Abacaxi', 'Pêra')
 
-// console.log(removeEAdicionaFrutas)
 
-let apenasAdiconaFrutas = frutas.splice (1, 0, 'Melancia', 'Manga')
+let removeEAdicionaFrutas = frutas.splice(1, 2,'Goiaba', 'Abacaxi', 'Pêra')
+
+console.log(removeEAdicionaFrutas)
 
 console.log(frutas)
+
+
+
+
+// let apenasAdiconaFrutas = frutas.splice (1, 0, 'Melancia', 'Manga')
+
+// console.log(frutas)

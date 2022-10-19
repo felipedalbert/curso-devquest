@@ -10,4 +10,9 @@ function adicionarComentario(){
     let novosComentarios = document.getElementById('novos-comentarios')
 
     novosComentarios.innerHTML += `<p>Novo comentário: ${textoDigitado}<p>`
+
+    // ou
+
+                                //innerHTML que ja existia  +   novo comentário
+    novosComentarios.innerHTML = novosComentarios.innerHTML + `<p>Novo comentário: ${textoDigitado}<p>`
 }
