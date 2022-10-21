@@ -1,0 +1,11 @@
+@import 'abstract/reset.css';
+@import 'abstract/global.css';
+
+.container-principal{
+    width: 100vw;
+    height: 100vh;
+}
+
+.paisagem{
+    display: flex;
+}
