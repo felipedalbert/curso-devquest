@@ -11,7 +11,7 @@ undefinied (var a = undefinied)
 ►►► Hoisting com let e const:
 
 -> As variáveis com let e const também sofrem içamento (são armazenadas na memória), enxergando
-que aquela variável let existe, porém não podem ser acessadas antes de sua inicialização(atribuição) e atribuidas 
+que aquela variável let ou constante const existem, porém não podem ser acessadas antes de sua inicialização(atribuição) e atribuidas 
 como undefinied. Logo, seu acesso só é permitido após receberem uma atribuição; caso contrário, teremos um erro. 
 
 E é por isso que precisamos defini-las sempre no início de cada escopo manualmente (para que essas variáveis 

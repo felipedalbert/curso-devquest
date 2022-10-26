@@ -10,11 +10,11 @@ console.log(inputTextoQualquer2)
 corpo.addEventListener('click', validar);
 
 function validar(){
-    if(inputTextoQualquer[0].value !== '') {
+    if(inputTextoQualquer.value !== '') {
         console.log('oi')
-        inputTextoQualquer[0].classList.add('campo-preenchido')
+        inputTextoQualquer.classList.add('campo-preenchido')
     }else{
-        inputTextoQualquer[0].classList.remove('campo-preenchido')
+        inputTextoQualquer.classList.remove('campo-preenchido')
     }
 }
 

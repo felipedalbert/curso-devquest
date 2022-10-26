@@ -4,8 +4,6 @@ const setaAvancar = document.getElementById('btn-avancar')
 const setaVoltar = document.getElementById('btn-voltar')
 let paisagemAtual = 0
 
-setaVoltar.classList.add('fim')
-
 function esconderImagens(){
     paisagens[paisagemAtual].classList.remove('mostrar')
     infoCard[paisagemAtual].classList.remove('surgir')
@@ -51,5 +49,8 @@ setaVoltar.addEventListener('click', () =>{
 
     console.log(paisagemAtual)
 
-    if (paisagemAtual === totalDePaisagens) setaVoltar.classList.add('fim') 
+    if (paisagemAtual === totalDePaisagens){
+        setaVoltar.classList.add('fim')
+        
+    } 
 })
