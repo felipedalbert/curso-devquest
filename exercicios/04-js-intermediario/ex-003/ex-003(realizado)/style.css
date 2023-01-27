@@ -21,3 +21,7 @@ main .container .quadrado{
     background-color: black;
     cursor: pointer;
 }
+
+main .container .quadrado.azul{
+    background-color: blue;
+}

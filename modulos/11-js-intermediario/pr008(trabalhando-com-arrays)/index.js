@@ -4,8 +4,9 @@ for(let i = 0; i < frutas.length; i++){
     console.log(`Fruta: ${frutas[i]}`);
 }
 
-frutas.forEach(item =>{ //(item, indice, array) - iteração com arrays - para cada
-    console.log(`Fruta: ${item}`)
+frutas.forEach((item, indice) =>{ //(item, indice, array) - iteração com arrays - para cada
+    // console.log(`Fruta: ${item}`)
+    console.log(`${frutas[indice]}a`)
 })
 
 frutas.push('manga') //empurra mais um item no final array

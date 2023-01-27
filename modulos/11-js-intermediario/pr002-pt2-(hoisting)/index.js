@@ -1,4 +1,4 @@
-debugger
+
 console.log(pais) // retorna undefinied como valor padrão
 var pais = 'Brasil'
 
@@ -8,11 +8,11 @@ var pais = 'Brasil'
 
 
 console.log(teste)
+
 if(2 == 2){
-    var teste = 123;
-    
+  var teste = 123; 
 }else{
-    console.log('teste')
+  console.log('teste')
 }
 
 

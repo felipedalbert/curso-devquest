@@ -1,16 +1,16 @@
-'use strict';
-// use stric evita o vazamento do escopo do this para outra o escopo de uma outra função
+// 'use strict';
+// // use stric evita o vazamento do escopo do this para outra o escopo de uma outra função
 
-console.log(window);
-console.log(window === this)
+// console.log(window);
+// console.log(window === this)
 
-this.name = 'João'
-function saudar() {
-    console.log(`this no contexto da função ${this}`)
-    console.log(`Olá ${this.name}`)
-}
+// this.name = 'João'
+// function saudar() {
+//     console.log(`this no contexto da função ${this}`)
+//     console.log(`Olá ${this.name}`)
+// }
 
-saudar()
+// saudar()
 
 
 
@@ -23,7 +23,7 @@ let usuario = {
     despedir: function(){
         console.log(`Adeus, ${this.nome}`)
 
-        console.log(`this.nome no contexto do metodo ${this.nome}`)
+        console.log(`this.nome no contexto do metodo`)
     }
 }
 
@@ -50,4 +50,4 @@ comida.cozinhar = function (temperaturaDeCozimento){
 
 comida.cozinhar(100)
 
-// console.log(comida)
+console.log(comida)

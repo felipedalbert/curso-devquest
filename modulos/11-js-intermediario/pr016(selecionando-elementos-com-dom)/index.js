@@ -17,13 +17,16 @@ console.log(inputPorName)
 
 
 
+//diferenças entre HTMLColection e NodesList
+
+
 let paragrafosComHtmlColection = document.getElementsByTagName('p')
 
 let paragrafosComNodeList = document.querySelectorAll('p')
 
-// paragrafosComNodeList.forEach(paragrafo =>{
-//     paragrafo.style.color = 'blue';
-// })
+paragrafosComNodeList.forEach(paragrafo =>{
+    paragrafo.style.color = 'blue';
+})
 
 // paragrafosComHtmlColection.forEach(paragrafo =>{
 //     paragrafo.style.color = 'blue';

@@ -1,7 +1,7 @@
 let botaoTrocaCor = document.getElementById('btnTrocaCor')
 let quadradoMutante = document.getElementById('quadrado1')
 
-
+console.log(getComputedStyle(quadradoMutante).backgroundColor)
 
 botaoTrocaCor.addEventListener('click', () =>{
 

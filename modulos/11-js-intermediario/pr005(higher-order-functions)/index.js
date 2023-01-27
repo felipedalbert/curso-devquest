@@ -2,8 +2,8 @@
 
 
 const calcularAnoDeNascimento = function (idade, mesDeNascimento, imprimir){
-    const mesAtual = 10
-    let anoDeNascimento = 2022 - idade
+    const mesAtual = 1
+    let anoDeNascimento = 2023 - idade
     if(mesDeNascimento > mesAtual) anoDeNascimento--
     imprimir(anoDeNascimento) //chama a função insirida no parametro
 }
@@ -25,9 +25,9 @@ const multiplicar = multiplicador => numero => numero * multiplicador
 
 
 let dobrar = multiplicar(2)
-console.log(dobrar)
 let triplicar = multiplicar(3)
 let quadruplicar = multiplicar(4)
+
 
 console.log(quadruplicar(5));
 

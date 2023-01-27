@@ -10,7 +10,7 @@ selectDeEstado.addEventListener("change", function(event) {
 })
 
 selectDeEstado.addEventListener("change", function(event) {
-    console.log(event.target.value) //o target será o mais será mais comum, ja que é utilizado para acessar geralmente seus valore internos com value. 
+    console.log(event.target.value) //o target será o mais será mais comum, ja que é utilizado para acessar geralmente seus valores internos com value. 
 })
 
 selectDeEstado.addEventListener("change", function() {

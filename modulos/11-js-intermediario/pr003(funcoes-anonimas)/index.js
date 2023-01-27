@@ -3,7 +3,7 @@
 // }
 
 // let resutadoDaSoma = somar(12, 5)
-// console.log(resutadoDaSoma) // vesão sem função anonima
+// console.log(resutadoDaSoma) // versão sem função anonima
 
 let resutadoDaSoma = function(n1, n2){
     return n1 + n2;

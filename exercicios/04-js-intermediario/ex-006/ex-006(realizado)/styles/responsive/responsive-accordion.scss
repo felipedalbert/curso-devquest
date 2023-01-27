@@ -1,0 +1,123 @@
+@media (max-width: 768px) {
+    
+    main .content{
+        padding: 160px 37px 30px 37px;
+        min-height: unset;
+
+        .image-person{
+            width: 230px;
+            height: 230px;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -40%);
+        }
+
+        .faq{
+            row-gap: 16px;
+
+            h2{
+                text-align: center;
+                font-size: 2.2rem;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    main .content{
+        padding: 150px 20px 15px 20px;
+
+        .image-person{
+            width: 220px;
+            height: 220px;
+
+            @media (max-height: 638px) {
+                width: 170px;
+                height: 170px;
+                top: 0;
+                transform: translate(-50%, -20%);
+            }
+        }
+
+        .faq{
+            row-gap: 16px;
+
+            h2{
+                font-size: 2rem;
+            }
+
+            .accordion{
+                row-gap: 12px;
+
+                .content-box{
+                    width: 70vw;
+                    padding-bottom: 10px;
+
+                    .label{
+
+                        span{
+                            font-size: 1.5rem;
+                            width: fit-content;
+                            margin-right: 35px;
+                        }
+
+                        .icon{
+                            width: 12px;
+                            height: 10px;
+                        }
+                    }
+
+                    .text-content{
+                        transition: .4s;
+                        
+
+                        p{  
+                            width: unset;
+                            max-width: 90%;
+                            font-size: 1.2rem;
+                        }
+                    }
+                    
+                        
+
+                    &.active .text-content{
+                        height: 42px;
+
+                        @media (max-width: 384px) and (min-height: 540px){
+                            height: 30px;
+                            overflow-y: scroll;
+                        }
+                    }
+                    
+                    
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 400px) and (max-height: 540px){
+    main .content{
+        padding-top: 15px;
+
+        .image-person{
+            display: none;
+        }
+
+        .faq{
+
+            h2{
+                color: #f25334;
+                letter-spacing: 2px;
+            }
+        }
+
+        .accordion .content-box.active .text-content{
+            @media (max-width: 382px){
+                height: 56px;
+            }
+        }
+    }          
+}

@@ -1,0 +1,100 @@
+@import '../abstract/_reset.scss';
+@import '../abstract/_global.scss';
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content{
+        min-height: 347px;
+        padding: 60px 37px 60px 228px;
+        background: #FCFCFC;
+        border-radius: 21px;
+        box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.25);
+        position: relative;
+        display: flex;
+        align-items: center;
+        
+        
+        .image-person{
+            width: 278px;
+            height: 293px;
+            position: absolute;
+            top: 50%;
+            left: -13%;
+            transform: translateY(-48%);
+        }
+
+        .faq{
+            display: flex;
+            flex-direction: column;
+            row-gap: 14px;
+
+            h2{
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+            .accordion{
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+
+                .content-box{
+                   width: 390px;
+                   border-bottom: 1px solid #d4d4d4;
+                   padding-bottom: 15px;
+                   cursor: pointer;
+
+                    .label{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        transition: .2s ease-in-out;
+
+                        span{
+                            font-size: 1.7rem;
+                            font-weight: 500;
+                        }
+
+                        .icon{
+                            width: 15px;
+                            height: 10px;
+                            transform: translateX(-13px);
+                        }
+
+                        &:hover{
+                            color:#f47c57;
+                        }
+                    }
+                    
+                    .text-content{
+                        height: 0; 
+                        overflow: hidden;
+                        transition: .4s;
+
+                        p{
+                            width: 357px;
+                            font-size: 1.5rem;
+                        }
+
+                    }
+
+                    &.active .text-content{
+                        height: 54.545px;
+                        margin-top: 10px;
+                    }
+
+                    &:last-of-type{
+                        border-bottom: none;
+                    }
+
+                }
+            }
+        }
+    }
+}

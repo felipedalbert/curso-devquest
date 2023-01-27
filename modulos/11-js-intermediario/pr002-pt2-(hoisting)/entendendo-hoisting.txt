@@ -38,6 +38,6 @@ antes de declara-la, o código funcionará perfeitamente
 utilizadas antes mesmo de serem construídas.
 
 ►►► Hoisting com função atribuida a um var:
--> Se atribuirmos uma função a um variável var e tentarmos lê-la antes de sua atribuiçãp, 
+-> Se atribuirmos uma função a um variável var e tentarmos lê-la antes de sua atribuição, 
 o hoisting definirá a variável será definida como undefinied, impedindo a utilização da
 função através da variável.

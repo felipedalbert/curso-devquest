@@ -1,11 +1,13 @@
-.campo-preenchido{
+
+input{
+    border: black 1px solid;
+    outline: none;
+}
+
+input.campo-preenchido{
     border: green 1px solid;
 }
 
-.campo-vazio{
+input.campo-vazio{
     border: red 1px solid;
-}
-
-input{
-    outline: none;
 }

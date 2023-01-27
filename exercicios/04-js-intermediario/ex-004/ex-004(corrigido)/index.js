@@ -2,10 +2,9 @@ const inputTextoQualquer = document.querySelectorAll("[name='texto-qualquer']")
 
 console.log(inputTextoQualquer)
 
-inputTextoQualquer.forEach(function(input, index){
-    console.log(this)
+inputTextoQualquer.forEach(input => {
 
-    inputTextoQualquer[index].addEventListener('change', () =>{
+    input.addEventListener('change', () =>{
         if(input.value !== ''){
             input.classList.add('campo-preenchido')
             input.classList.remove('campo-vazio')
@@ -15,3 +14,4 @@ inputTextoQualquer.forEach(function(input, index){
         }
     })
 })
+
