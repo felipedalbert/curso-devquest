@@ -4,7 +4,7 @@ const videoGame = {
     jogos : ['Final fantasy', 'Forza Horizon', 'Quantum break']
 }
 
-console.log(videoGame.jogos[1])
+
 
 
 
@@ -38,11 +38,11 @@ const videoGame2 = {
     ] //array de objetos dentro de um objeto
 }
 
-videoGame2.jogos.push(jogo4)
 
-console.log(videoGame2.jogos[3])
 
-console.log(videoGame2.jogos[2].nome)
+console.log(videoGame2.jogos)
+
+
 
 
 

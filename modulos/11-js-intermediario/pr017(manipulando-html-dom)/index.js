@@ -7,12 +7,21 @@ function adicionarComentario(){
 
     console.log(textoDigitado)
 
-    let novosComentarios = document.getElementById('novos-comentarios')
+    let divNovosComentarios = document.getElementById('novos-comentarios')
 
     // novosComentarios.innerHTML += `<p>Novo comentário: ${textoDigitado}<p>`
 
-    // ou
 
                                 //innerHTML que ja existia  +   novo comentário
-    novosComentarios.innerHTML = novosComentarios.innerHTML + `<p>Novo comentário: ${textoDigitado}<p>`
+    // novosComentarios.innerHTML = novosComentarios.innerHTML + `<p>Novo comentário: ${textoDigitado}<p>`
+
+
+
+    // método create element e append child
+
+    let elementoNovoComentario = document.createElement('p');
+
+    elementoNovoComentario.appendChild(document.createTextNode(textoDigitado))
+
+    divNovosComentarios.appendChild(elementoNovoComentario)
 }

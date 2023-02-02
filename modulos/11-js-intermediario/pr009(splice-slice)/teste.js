@@ -4,7 +4,7 @@ var indiceSp = estados.indexOf('SP');
 
 console.log(indiceSp)
 
-while(indiceSp >= 0){
+while(indiceSp >= 1){
     
     estados.splice(indiceSp, 1);
 

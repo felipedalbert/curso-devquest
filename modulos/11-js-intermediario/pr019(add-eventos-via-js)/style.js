@@ -22,3 +22,11 @@ selectDeEstado.addEventListener("change", function() {
 
 //não é possível escutar eventos de arrays, seja de getElements ou de querySelectorAll, ja que escutadores funcionam apenas 
 //quando não há uma lista e sim um unico elemento
+
+
+
+selectDeEstado.addEventListener("change", function() {
+    if (selectDeEstado.value == "RJ"){
+        console.log('teste')
+    }
+})

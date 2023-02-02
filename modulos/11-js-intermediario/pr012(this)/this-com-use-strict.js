@@ -1,10 +1,11 @@
-// 'use strict';
-// // use stric evita o vazamento do escopo do this para outra o escopo de uma outra função
+'use strict';
+// use stric evita o vazamento do escopo do this para outra o escopo de uma outra função
 
 // console.log(window);
 // console.log(window === this)
 
 // this.name = 'João'
+
 // function saudar() {
 //     console.log(`this no contexto da função ${this}`)
 //     console.log(`Olá ${this.name}`)
@@ -12,7 +13,14 @@
 
 // saudar()
 
+// let pessoa = {
+//     nome: 'claudio',
+//     saudar: function(tipoSaudacao){
+//         console.log(`${tipoSaudacao}, ${this.nome}`)
+//     }
+// }
 
+// pessoa.saudar('Olá')
 
 
 
