@@ -12,7 +12,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\pr002(map)\\index.js",
+            "program": "${workspaceFolder}\\pr005(desestruturacao-objetos-arrays)\\index.js",
             "console":"integratedTerminal"
         }
     ]
