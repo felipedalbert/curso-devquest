@@ -5,9 +5,17 @@ let pessoa = { nome: 'Felipe', sobrenome: 'Dalbert', idade: 18 }
 // console.log(nome)
 // console.log(idade)
 
-let {nome: nome, sobrenome:sobrenome, idade: idade} = pessoa
 
-console.log(nome, sobrenome, idade)
+
+// let {nome, sobrenome, idade} = pessoa //desestrturação básica de objetos
+
+// console.log(nome, sobrenome, idade)
+
+
+let {nome: name, sobrenome: surname, idade: age} = pessoa //desestrturação básica de objetos
+
+console.log(name, surname, age)
+
 
 const numeros = [1, 2, 3]
 
