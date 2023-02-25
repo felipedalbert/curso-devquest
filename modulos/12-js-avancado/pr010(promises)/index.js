@@ -20,6 +20,6 @@ let ferverAgua = (chaleiraEstaNoFogao, fogaoEstaligado) => {
 }
 
 let chaleiraEstaNoFogao = true
-let fogaoEstaligado = false
+let fogaoEstaligado = true
 ferverAgua(chaleiraEstaNoFogao, fogaoEstaligado)
 console.log('Fazendo café')
