@@ -19,7 +19,9 @@ let ferverAgua = (chaleiraEstaNoFogao, fogaoEstaligado) => {
     })
 }
 
+let = passarCafe = () => console.log('passando café')
+
 let chaleiraEstaNoFogao = true
 let fogaoEstaligado = true
-ferverAgua(chaleiraEstaNoFogao, fogaoEstaligado)
+ferverAgua(chaleiraEstaNoFogao, fogaoEstaligado).then(passarCafe)
 console.log('Fazendo café')
