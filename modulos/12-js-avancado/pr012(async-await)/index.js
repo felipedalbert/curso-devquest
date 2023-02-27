@@ -11,8 +11,10 @@ let ferverAgua = (chaleiraEstaNoFogao, fogaoEstaligado) => {
 }
 
 let passarCafe = (aguaFervida) =>{
+    console.log(aguaFervida)
     return new Promise((resolve) =>{
         console.log('Passo 2 Finalzado: Café foi passado')
+        console.log(aguaFervida)
         resolve()
     })
 }
@@ -36,7 +38,9 @@ let fogaoEstaligado = true
 
 async function initFazerCafe(){
     const aguaFervida = await ferverAgua(chaleiraEstaNoFogao, fogaoEstaligado)
-    const cafePassado= await passarCafe(aguaFervida)
+    const cafePassado = await passarCafe(aguaFervida) /*neste caso, o par. só serve para esperar o resolve da função anterior.
+    Em alguns casos, ele pode ser usado como ID de usuário para buscar em uma API. No entanto, não é possivel utilizar a espera do
+    resolve de uma função anterior e um parametro normal ao mesmo tempo. São duas coisas distintas que funcionam em momentos distintos*/
     const cafeTomado = await tomarCafe(cafePassado)
     const xicaraLavada = await lavarXicara(cafeTomado)
     if (xicaraLavada) console.log('Finalizado ritual do café, bora trabalhar!')
