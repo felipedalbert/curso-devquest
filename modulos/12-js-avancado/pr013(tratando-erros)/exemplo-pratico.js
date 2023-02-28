@@ -23,5 +23,7 @@ function fazerRequisicao() {
 }
 
 fazerRequisicao()
+
+
   
   
