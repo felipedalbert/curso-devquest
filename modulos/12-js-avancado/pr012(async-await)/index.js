@@ -10,7 +10,7 @@ let ferverAgua = (chaleiraEstaNoFogao, fogaoEstaligado) => {
     })
 }
 
-let passarCafe = (aguaFervida) =>{
+let passarCafe = () =>{
     console.log(aguaFervida)
     return new Promise((resolve) =>{
         console.log('Passo 2 Finalzado: Café foi passado')
@@ -19,14 +19,14 @@ let passarCafe = (aguaFervida) =>{
     })
 }
 
-let tomarCafe = (cafePassado) =>{
+let tomarCafe = () =>{
     return new Promise((resolve) =>{
         console.log('Passo 3 Finalzado: Terminei de tomar o café')
         resolve()
     })
 }
 
-let lavarXicara = (cafeTomado) =>{
+let lavarXicara = () =>{
     return new Promise((resolve) =>{
         console.log('Passo 4 Finalzado: Terminei de lavar a xícara')
         resolve()
