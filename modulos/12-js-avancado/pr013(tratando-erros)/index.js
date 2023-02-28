@@ -1,7 +1,7 @@
 let ferverAgua = (chaleiraEstaNoFogao, fogaoEstaligado) => {
     return new Promise((resolve, reject)=>{
 
-        if (typeof chaleiraEstaNoFogao != 'boolean' || fogaoEstaligado != 'boolean') throw "Somente o tipo booleano é aceito" /*Quando um erro
+        if (typeof chaleiraEstaNoFogao != 'boolean' || typeof fogaoEstaligado != 'boolean') throw "Somente o tipo booleano é aceito" /*Quando um erro
         personalizado (throw) é "ativado" pela validação, o catch vai captura-lo, exbir esse erro dependendo do bloco de código e depois vai
         executar o finally*/
 
@@ -38,7 +38,7 @@ let lavarXicara = () =>{
     })
 }
 
-let chaleiraEstaNoFogao = 1
+let chaleiraEstaNoFogao = false
 let fogaoEstaligado = true
 
 async function initFazerCafe(){
