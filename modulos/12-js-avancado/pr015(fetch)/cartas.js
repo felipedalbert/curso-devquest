@@ -24,7 +24,9 @@ async function mostrarCartaTirada(){
 
     for(let carta of imagensCartas){
         containerCartas[0].innerHTML += `
-            <img src="${carta.image}" alt="carta">
+            <div class="card-box">
+                <img src="${carta.image}" alt="carta">
+            </div>
         `
     }
 }

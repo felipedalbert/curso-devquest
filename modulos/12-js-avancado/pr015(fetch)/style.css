@@ -124,7 +124,31 @@ header .info-parametros .info-legenda #cartas-restantes{
     text-shadow: 1.5px 1.5px 1px rgba(253, 253, 253, 0.44);
 }
 
-main{
-    height: 100vh;
-    background-color: #c6c9cf;
+.principal{
+    background-color: #babdc4;
 }
+
+.principal #imgs-container{
+    min-height: calc(100vh - 232.22px);
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+
+.principal #imgs-container .card-box{
+    width: 240px;
+    height: 330px;
+    background-color: #83838e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
