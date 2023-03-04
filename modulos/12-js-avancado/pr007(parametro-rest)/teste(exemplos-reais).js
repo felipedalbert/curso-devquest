@@ -27,8 +27,8 @@ console.log(concatenar(" ", "hello", "world")); // "hello world"
 
 //EXEMPLO 3: Passagem de arrays entre funções
 
-function multiplicar(numero, ...outrosNumeros) {
-    return outrosNumeros.map(n => n * numero);
+function multiplicar(multiplicador, ...outrosNumeros) {
+    return outrosNumeros.map(n => n * multiplicador);
 }
   
 const numeros = [2, 4, 6, 8];

@@ -14,7 +14,13 @@ let pessoa = { nome: 'Felipe', sobrenome: 'Dalbert', idade: 18 }
 
 let {nome: name, sobrenome: surname, idade: age} = pessoa //desestrturação básica de objetos
 
-console.log(name, surname, age)
+console.log(name)
+console.log(surname)
+console.log(age)
+
+name = 'João'
+
+console.log(pessoa.nome) //Não modifica a propriedade do objeto original
 
 
 const numeros = [1, 2, 3]
