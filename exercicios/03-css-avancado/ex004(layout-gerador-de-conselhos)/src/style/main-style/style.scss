@@ -10,9 +10,9 @@
     background-color: $background-color;
 
     .advice-container{
-        max-width: 480px;
+        max-width: 400px;
         background-color: $advice-card-color;
-        padding: 30px;
+        padding: 30px 30px 50px 30px;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -20,5 +20,47 @@
         row-gap: 20px;
         box-shadow: rgba(32, 32, 41, 0.2) 0px 7px 29px 0px;
         position: relative;
+
+        h2{
+            color: hsl(150, 100%, 66%);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 1rem;
+        }
+
+        p{
+            color: $text-color;
+            font-size: 2rem;
+            font-weight: $default-weight;
+            text-align: center;
+            width: 95%;
+        }
+
+        picture{
+            margin-top: 10px;
+            width: 95%;
+
+            img{
+            max-width: 100%;
+            }
+            
+        }
+
+        button{
+            position: absolute;
+            bottom: -20px;
+            padding: 22px;
+            background-color: $advice-dice-color;
+            border-radius: 22px;
+            border: none;
+            cursor: pointer;
+            background: url(../../images/icon-dice.svg) center no-repeat $advice-dice-color;
+            background-size: 15px;
+            transition: ease-in-out .2s;
+
+            &:hover{
+                background-color: $advice-dice-color-hover;
+            }
+        }
     }
 }
