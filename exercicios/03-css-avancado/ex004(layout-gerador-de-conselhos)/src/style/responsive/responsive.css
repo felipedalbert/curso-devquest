@@ -1,1 +1,11 @@
-/*# sourceMappingURL=responsive.css.map */
+@media (max-width: 425px) {
+  .content-box {
+    padding: 30px;
+  }
+  .content-box .advice-container h2 {
+    font-size: 0.9rem;
+  }
+  .content-box .advice-container p {
+    font-size: 1.8rem;
+  }
+}/*# sourceMappingURL=responsive.css.map */

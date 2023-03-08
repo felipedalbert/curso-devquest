@@ -63,8 +63,9 @@ html p, html h2, html img {
 .content-box .advice-container picture {
   margin-top: 10px;
   width: 95%;
+  text-align: center;
 }
-.content-box .advice-container picture img {
+.content-box .advice-container picture img, .content-box .advice-container picture source {
   max-width: 100%;
 }
 .content-box .advice-container button {

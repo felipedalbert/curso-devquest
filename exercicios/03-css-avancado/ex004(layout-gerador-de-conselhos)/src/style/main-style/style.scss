@@ -40,9 +40,10 @@
         picture{
             margin-top: 10px;
             width: 95%;
+            text-align: center;
 
-            img{
-            max-width: 100%;
+            img, source{
+                max-width: 100%;
             }
             
         }
