@@ -29,9 +29,11 @@
         btn = document.getElementById('advice-btn');
 
         btn.addEventListener('click', ()=>{
-            btn.classList.add('rotate-animation') 
+            btn.classList.add('rotate-animation')
+            btn.disabled = true
             setTimeout(()=>{
                 btn.classList.remove('rotate-animation')
+                btn.disabled = false
             },600)
         })
     </script>
