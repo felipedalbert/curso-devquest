@@ -1,5 +1,6 @@
 @import '../abstract/reset';
 @import '../abstract/global';
+@import '../animations/keyframes';
 
 .content-box{
     width: 100vw;
@@ -51,15 +52,20 @@
             bottom: -20px;
             padding: 22px;
             background-color: $advice-dice-color;
-            border-radius: 22px;
+            border-radius: 24px;
             border: none;
             cursor: pointer;
-            background: url(../../images/icon-dice.svg) center no-repeat $advice-dice-color;
+            background: url(../../images/icon-dice.svg) center center no-repeat $advice-dice-color;
             background-size: 15px;
-            transition: ease-in-out .2s;
+            // transition: ease-in-out .2s;
 
             &:hover{
                 background-color: $advice-dice-color-hover;
+            }
+
+            &.rotate-animation{
+                animation: spin .5s;
+                user-select: none;
             }
         }
     }
