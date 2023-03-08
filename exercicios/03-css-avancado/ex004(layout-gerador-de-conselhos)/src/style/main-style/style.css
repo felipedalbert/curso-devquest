@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 html {
   font-family: var("Manrope", sans-serif);
   font-size: 62.5%;
@@ -17,4 +21,25 @@ html p {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+
+.content-box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(218, 23%, 16%);
+}
+.content-box .advice-container {
+  max-width: 480px;
+  background-color: hsl(217, 19%, 24%);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  box-shadow: rgba(32, 32, 41, 0.2) 0px 7px 29px 0px;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
