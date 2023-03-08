@@ -24,5 +24,16 @@
             <button class="btn" id="advice-btn"></button>
         </div>
     </main>
+
+    <script>
+        btn = document.getElementById('advice-btn');
+
+        btn.addEventListener('click', ()=>{
+            btn.classList.add('rotate-animation') 
+            setTimeout(()=>{
+                btn.classList.remove('rotate-animation')
+            },600)
+        })
+    </script>
 </body>
 </html>
