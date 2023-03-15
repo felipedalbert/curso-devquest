@@ -4,7 +4,7 @@ function testeFuncao(){
 
 testeFuncao();
 
-function soma(n1, n2){
+function sdfsdftwe(n1, n2){
     console.log(n1 + n2)
 }
 

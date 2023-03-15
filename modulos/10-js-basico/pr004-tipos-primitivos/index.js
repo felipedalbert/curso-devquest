@@ -2,9 +2,9 @@ let nome = 'Felipe'; // string (utilizado para letras)
 
 let numero = 21.5; // number (utilizados para número inteiros, decimais e/ou negativos)
 
-let usuarioVerificado = true; // boolean (dois valores -> 'true' ou 'false')
+let usuarioVerificado = false; // boolean (dois valores -> 'true' ou 'false')
 
-if(usuarioVerificado){
+if(usuarioVerificado == true){
     console.log("usuário verificado");
 }else{
     console.log("usuário não é verificado");
