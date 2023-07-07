@@ -6,7 +6,7 @@ let ferverAgua = (chaleiraEstaNoFogao, fogaoEstaligado) => {
 
         if(chaleiraEstaNoFogao && fogaoEstaligado){
             console.log('Passo 1 finalizado: Água foi fervida')
-            resolve()
+            resolve(true)
         }else{
             const mensagemDeErro = 'É necessário ligar o fogão e colocar a chaleira no fogão para ferver a água'
             reject(mensagemDeErro)
@@ -14,26 +14,30 @@ let ferverAgua = (chaleiraEstaNoFogao, fogaoEstaligado) => {
     })
 }
 
-let passarCafe = () =>{
-    console.log(aguaFervida)
+let passarCafe = (x) =>{
     return new Promise((resolve) =>{
-        console.log('Passo 2 Finalzado: Café foi passado')
-        console.log(aguaFervida)
-        resolve()
+        if(x){
+           console.log('Passo 2 Finalizado: Café foi passado')
+            resolve(true) 
+        }
     })
 }
 
-let tomarCafe = () =>{
+let tomarCafe = (x) =>{
     return new Promise((resolve) =>{
-        console.log('Passo 3 Finalzado: Terminei de tomar o café')
-        resolve()
+        if(x){
+           console.log('Passo 3 Finalizado: Terminei de tomar o café')
+            resolve(true) 
+        }
     })
 }
 
-let lavarXicara = () =>{
+let lavarXicara = (x) =>{
     return new Promise((resolve) =>{
-        console.log('Passo 4 Finalzado: Terminei de lavar a xícara')
-        resolve()
+        if(x){
+           console.log('Passo 4 Finalzado: Terminei de lavar a xícara')
+            resolve(true) 
+        }
     })
 }
 
@@ -48,9 +52,8 @@ async function initFazerCafe(){
         const xicaraLavada = await lavarXicara(cafeTomado)
         if (xicaraLavada) console.log('Finalizado ritual do café!')
 
-        throw "Mensagem de erro"
     }catch(error){
-        console.log(error)
+        console.error(error)
     }finally{
         console.log('Bora trabalhar!')
     }

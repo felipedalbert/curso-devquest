@@ -20,6 +20,12 @@ console.log(...pessoas)
 
 const pessoa1 = { nome: 'Felipe', idade: 18 }
 
+let copia = pessoa1.nome
+
+copia = 'João'
+
+console.log(pessoa1)
+
 
 const pessoaComCidade = {...pessoa1, cidade: 'Curitiba'}
 console.log(pessoaComCidade)
