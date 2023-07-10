@@ -1,7 +1,7 @@
 import './button.css'
 
-const button = () =>{
+const Button = () =>{
     return <button className="btn">Clique aqui</button>
 }
 
-export default button
+export default Button
