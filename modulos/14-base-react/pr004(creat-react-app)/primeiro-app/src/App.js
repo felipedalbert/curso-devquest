@@ -15,9 +15,12 @@ function App() {
 function App2() {
   return (
     <>
-      <Card/>
+      <Card title='Título card 1'/>
+      <Card title='Título card 2'/>
+      <Card title='Título card 3'/>
     </>
   );
 }
 
 export default {App, App2};
+ 
