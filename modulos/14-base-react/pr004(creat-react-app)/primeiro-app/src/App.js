@@ -1,5 +1,5 @@
 import Button from './components/button/button';
-import Card from './components/card/card';
+// import Card from './components/card/card';
 import Cards from './components/cards/cards'
 import './App.css';
 
