@@ -22,6 +22,8 @@ const Card = (props) => {
     )
 }
 
+
+
 Card.defaultProps = {
     color: 'red'
 }
