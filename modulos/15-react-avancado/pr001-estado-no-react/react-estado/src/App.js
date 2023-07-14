@@ -1,13 +1,14 @@
 import './App.css'
 // import Panel from './components/panel/panel'
-import DeckOfCards from './components/deck-of-cards/deck-of-cards';
+import DeckOfCardsClass from './components/deck-of-cards/deck-of-cards-with-class';
+import DeckOfCardsFunction from './components/deck-of-cards/deck-of-cards-with-functions';
 
 
 function App() {
 
   return (
     <>
-      <DeckOfCards/>
+      <DeckOfCardsFunction/>
     </>
   )
 }

@@ -11,7 +11,7 @@ async function getCards(deckId){
     return await response.json()
 }
 
-class DeckOfCards extends Component {
+class DeckOfCardsClass extends Component {
     constructor(){
         console.log('constructing')
         super()
@@ -54,4 +54,4 @@ class DeckOfCards extends Component {
     }
 }
 
-export default DeckOfCards
+export default DeckOfCardsClass
