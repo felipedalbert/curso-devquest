@@ -4,7 +4,7 @@ const Form = (props) => {
     
     const [inputs, setInputs] = useState({
             image: '',
-            name: '',
+            value: '',
             suit: ''
     })
 
@@ -16,6 +16,7 @@ const Form = (props) => {
         setInputs({
             ...inputs,
             [name]: value
+            
         })
     }
 
@@ -32,8 +33,8 @@ const Form = (props) => {
                     <input type="text" id="image" name="image" onChange={handleInputChange} value={inputs.image}></input>
                 </div>
                 <div>
-                    <label htmlFor="name">Nome da carta:</label>
-                    <input type="text" id="name" name="name" onChange={handleInputChange} value={inputs.name}></input>
+                    <label htmlFor="value">Nome da carta:</label>
+                    <input type="text" id="value" name="value" onChange={handleInputChange} value={inputs.value}></input>
                 </div>
                 <div>
                     <label htmlFor="suit">Naipe da carta:</label>

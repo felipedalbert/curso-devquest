@@ -5,10 +5,10 @@ async function creatDeck(){
     const response = await fetch('https://www.deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1')
     const deck = await response.json()
     return deck.deck_id
-}
+} 
 
 async function getCards(deckId){
-    const response = await fetch(`https://www.deckofcardsapi.com/api/deck/${deckId}/draw/?count=52`)
+    const response = await fetch(`https://www.deckofcardsapi.com/api/deck/${deckId}/draw/?count=1`)
     return await response.json()
 }
 
@@ -20,11 +20,7 @@ const DeckOfCardsFunction = () =>{
     const [isImageClicked, setIsImageClicked] = useState(false);
 
     const handleImageClick = () => {
-        if(isImageClicked){
-            setIsImageClicked(false);
-        }else{
-            setIsImageClicked(true);
-        }
+        setIsImageClicked(!isImageClicked)
         
     };
 
@@ -54,10 +50,10 @@ const DeckOfCardsFunction = () =>{
                                 <img
                                     src={card.image} 
                                     alt={card.value} 
-                                    style={{ border: isImageClicked ? '2px solid red' : 'none'}}
+                                    style={{border: isImageClicked ? '2px solid red' : 'none'}}
                                     onClick={handleImageClick}
                                 />
-                                <p>{card.name} {card.suit}</p>
+                                <p>{card.value} {card.suit}</p>
                             </li> 
                         )
                         
