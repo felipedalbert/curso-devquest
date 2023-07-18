@@ -13,11 +13,11 @@ const Form = (props) => {
         const {name} = target
         const {value} = target
         
-        setInputs({
-            ...inputs,
+        setInputs((prevState) =>({
+            ...prevState,
             [name]: value
             
-        })
+        }))
     }
 
     const handleSubmit = (event) =>{
